@@ -107,7 +107,7 @@ body {
 
   display: grid;
   place-content: center;
-  margin: 1.6rem;
+  margin: 0 1.6rem;
 }
 
 /* utility styles */
