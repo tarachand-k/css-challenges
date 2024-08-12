@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- displays site properly based on user's device -->
+
+  <link href="./assets/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-color: hsl(75, 94%, 57%);
+      --secondary-color: hsl(0, 0%, 100%);
+      --grey-400: hsl(0, 0%, 72%);
+      --grey-700: hsl(0, 0%, 20%);
+      --grey-800: hsl(0, 0%, 12%);
+      --grey-900: hsl(0, 0%, 8%);
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: "Figtree", sans-serif;
+      background-color: var(--grey-900);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.5;
+      letter-spacing: 0;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-column {
+      flex-direction: column;
+    }
+
+    .container {
+      text-align: center;
+      color: white;
+      padding: 32px;
+      gap: 18px;
+      background-color: var(--grey-800);
+      border-radius: 20px;
+      min-width: 348px;
+      /*max-width: 500px;*/
+    }
+
+    .user-info {
+      margin-bottom: 8px;
+    }
+
+    .user-info img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+
+    .user-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    .user-location {
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    .designation {
+      color: var(--grey-400);
+    }
+
+    .social-buttons {
+      gap: 16px;
+    }
+
+    .social-btn {
+      color: white;
+      font-weight: 600;
+      background-color: var(--grey-700);
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+    }
+
+    .social-btn:hover {
+      color: var(--grey-900);
+      background-color: var(--primary-color);
+    }
+
+    @media (max-width: 376px) {
+      .container {
+        padding: 24px;
+        min-width: unset;
+        width: 100%;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="container flex flex-column">
+  <figure class="user-info">
+    <img alt="user avatar" src="assets/images/avatar-jessica.jpeg"/>
+    <figcaption>
+      <h1 class="user-name">Jessica Randall</h1>
+      <p class="user-location">London, United Kingdom</p>
+    </figcaption>
+  </figure>
+
+  <p class="designation">"Front-end developer and avid reader."</p>
+
+  <div class="social-buttons flex flex-column">
+    <button class="social-btn">GitHub</button>
+    <button class="social-btn">Frontend Mentor</button>
+    <button class="social-btn">LinkedIn</button>
+    <button class="social-btn">Twitter</button>
+    <button class="social-btn">Instagram</button>
+  </div>
+</div>
+</body>
+</html>
